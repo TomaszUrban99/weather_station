@@ -1,2 +1,2 @@
 ../Src/Peripherals/gpio.c:3:6:gpio_init	1
-../Src/Peripherals/gpio.c:13:6:gpio_toggle	1
+../Src/Peripherals/gpio.c:16:6:gpio_toggle	1

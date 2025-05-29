@@ -11,6 +11,7 @@ void core_init(){
 
 void hardware_init(){
 
+
 	/* Clock init - initialize clocking - header file clock.h */
 	clock_init();
 

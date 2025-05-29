@@ -5,6 +5,5 @@ void basic_task(){
 	while(1){
 	gpio_toggle();
 	vTaskDelay(500);
-	int a;
 	}
 }

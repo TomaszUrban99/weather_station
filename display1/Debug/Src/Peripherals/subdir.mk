@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Src/Peripherals/clock.c \
-../Src/Peripherals/gpio.c 
+../Src/Peripherals/gpio.c \
+../Src/Peripherals/spi.c 
 
 OBJS += \
 ./Src/Peripherals/clock.o \
-./Src/Peripherals/gpio.o 
+./Src/Peripherals/gpio.o \
+./Src/Peripherals/spi.o 
 
 C_DEPS += \
 ./Src/Peripherals/clock.d \
-./Src/Peripherals/gpio.d 
+./Src/Peripherals/gpio.d \
+./Src/Peripherals/spi.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ Src/Peripherals/%.o Src/Peripherals/%.su Src/Peripherals/%.cyclo: ../Src/Periphe
 clean: clean-Src-2f-Peripherals
 
 clean-Src-2f-Peripherals:
-	-$(RM) ./Src/Peripherals/clock.cyclo ./Src/Peripherals/clock.d ./Src/Peripherals/clock.o ./Src/Peripherals/clock.su ./Src/Peripherals/gpio.cyclo ./Src/Peripherals/gpio.d ./Src/Peripherals/gpio.o ./Src/Peripherals/gpio.su
+	-$(RM) ./Src/Peripherals/clock.cyclo ./Src/Peripherals/clock.d ./Src/Peripherals/clock.o ./Src/Peripherals/clock.su ./Src/Peripherals/gpio.cyclo ./Src/Peripherals/gpio.d ./Src/Peripherals/gpio.o ./Src/Peripherals/gpio.su ./Src/Peripherals/spi.cyclo ./Src/Peripherals/spi.d ./Src/Peripherals/spi.o ./Src/Peripherals/spi.su
 
 .PHONY: clean-Src-2f-Peripherals
 

@@ -7,6 +7,7 @@
 #include "clock.h"
 #include "gpio.h"
 #include "basic_task.h"
+#include "system_hardware.h"
 
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
